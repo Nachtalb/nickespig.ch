@@ -1,0 +1,136 @@
+/* raleway-200 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('/fonts/raleway-v28-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/raleway-v28-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/raleway-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/raleway-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('/fonts/raleway-v28-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/raleway-v28-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --color-bg: #0e0e0e;
+  --color-fg: #efefef;
+  --font-family: Raleway;
+  --font-weight: 200;
+  --font-weight-bold: 600;
+  --font-size: 2rem;
+  --icon-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-light);
+}
+
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+h1 {
+  font-weight: var(--font-weight);
+}
+
+.highlight {
+  font-weight: var(--font-weight-bold);
+}
+
+#container,
+#content {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  background: transparent;
+  flex: 1 auto;
+}
+
+#content {
+  padding: 0 4em;
+  width: 50%;
+  max-width: 1010px;
+}
+
+#portrait {
+  background-image: url(me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  height: 100%;
+  width: 50vw;
+  max-width: 1000px;
+}
+
+.icon-list {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  height: var(--icon-size);
+  list-style: none;
+  justify-content: space-between;
+}
+
+.icon {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(319deg)
+    brightness(91%) contrast(125%);
+}
+
+.icon-linkedin { background-image: url("icons/linkedin.svg"); }
+.icon-gmail { background-image: url("icons/gmail.svg"); }
+.icon-telegram { background-image: url("icons/telegram.svg"); }
+.icon-steam { background-image: url("icons/steam.svg"); }
+.icon-github { background-image: url("icons/github.svg"); }
+.icon-stackoverflow { background-image: url("icons/stackoverflow.svg"); }
+.icon-globe { background-image: url("icons/globe.svg"); }
