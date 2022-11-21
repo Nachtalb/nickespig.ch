@@ -35,8 +35,8 @@
   --font-family: Raleway;
   --font-weight: 200;
   --font-weight-bold: 600;
-  --font-size: 2rem;
-  --icon-size: 40px;
+  --font-size: 1rem;
+  --icon-size: 30px;
 }
 
 * {
@@ -138,6 +138,11 @@ h1 {
 .icon-globe { background-image: url("icons/globe.svg"); }
 
 @media (min-width: 1024px) {
+  :root {
+    --font-size: 2rem;
+    --icon-size: 40px;
+  }
+
   #container {
     flex-direction: row;
   }
