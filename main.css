@@ -92,7 +92,7 @@ h1 {
 }
 
 #portrait {
-  background-image: url(me.jpg);
+  background-image: url(me.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
