@@ -60,3 +60,7 @@
   background: url(../snow/snow3.png) no-repeat center;
   background-size: contain;
 }
+
+#portrait {
+  background-image: url(../me-winter.webp);
+}
